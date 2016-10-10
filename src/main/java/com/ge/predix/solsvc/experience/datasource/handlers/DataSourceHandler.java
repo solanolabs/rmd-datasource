@@ -568,7 +568,7 @@ public abstract class DataSourceHandler {
 	private DatapointsQuery buildDatapointsQueryRequest(AssetTag assetTag, String startTime, String endTime) {
 		DatapointsQuery datapointsQuery = new DatapointsQuery();
 		if (startTime == null) {
-			datapointsQuery.setStart("1y-ago"); //$NON-NLS-1$
+			datapointsQuery.setStart("10d-ago"); //$NON-NLS-1$
 		} else {
 			datapointsQuery.setStart(startTime);
 		}
